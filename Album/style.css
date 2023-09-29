@@ -7,16 +7,15 @@ body{
 }
 
 .navbar{
-    background-color: #343A40;
-    height: 10%;
     display: flex;
+    background-color: #343A40;
+    height: 10%;    
 }
 .navbar>ul{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
-  /* background: #000; */
+  align-items: center; 
   width: 70%;
 }
 .navbar>ul>li{
@@ -27,15 +26,12 @@ body{
     font-size: 18px;
 }
 .container{
-    /* background: red; */
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-   align-items: center;
-   width: 30%;
-   height: 100%;
-   /* border: 5px solid #ffffff; */
-   /* background: red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 100%;
 }
 .album{
     color: #fff;
@@ -46,9 +42,7 @@ body{
 .album_example{
   display: flex;
   flex-direction: column;
-  /* margin: auto; */
   text-align: center;
-  /* background: red; */
   height: 45vh;
   width: 100%;
   text-align: center;
@@ -83,38 +77,34 @@ body{
     padding: 10px;
     border-radius: 3px;
 }
-/* .container1{
-    background-color: aqua;
-    width: 30%; 
-    margin: auto;
-    position: relative;
-    top: 40px;
 
-} */
 .heading{
     font-weight: normal;
     font-size: 35px;
     
 }
 .album_container{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    /* flex-flow: row wrap;
+    justify-content: space-around; */
     /* height: 70vh; */
     width: 100%;
     /* background: aqua; */
     margin-top: 20px;
 }
 footer{
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
+    display: grid;
     background-color: blue;
     color: #fff;
 }
 .album_card{
     border: 1px solid #1f1f1f;
-    width: 30%;
+    width: 80%;
     margin-bottom: 5px;
 
 }
