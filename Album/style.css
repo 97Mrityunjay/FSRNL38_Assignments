@@ -8,7 +8,7 @@ body{
 
 .navbar{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr ;
     background-color: #343A40;
     height: 10%;    
 }
@@ -27,12 +27,18 @@ body{
     font-size: 18px;
 }
 .container{
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 10px auto;
     width: 30%;
     height: 100%;
+}
+.container>.album{
+    margin-top: 12px;
 }
 .album{
     color: #fff;
